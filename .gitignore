@@ -6,7 +6,11 @@
 **/nbproject/Makefile-*
 **/nbproject/Package-*
 **/nbproject/project.properties
-**/.generated_files
+.vscode
+.generated_files
+dist/
+debug/
+build/
 **/*.X/debug
 **/*.X/dist
 **/*.X/build
