@@ -90,7 +90,7 @@ __STATIC_INLINE void mcRpeI_ParametersSet( tmcRpe_Parameters_s * const pParamete
     pParameters->pMotorParameters = &mcMotI_PMSM_gds;
 
     /** BEMF observer parameters */
-    pParameters->Ke = (float32_t)7.24;
+    pParameters->Ke = (float32_t)7.515;
     pParameters->dt = (float32_t)(0.00005);
     pParameters->nMin = 500.0f ;
 }

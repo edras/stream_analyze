@@ -319,19 +319,19 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;GraphSettings canvasHeight=&quot;930&quot; canvasWidth=&quot;581&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;GraphSettings canvasHeight=&quot;548&quot; canvasWidth=&quot;581&quot; dnOrder=&quot;0&quot;/&gt;
     &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;__ROOTVIEW&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;adc0&quot; x=&quot;279&quot; y=&quot;135&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;adc1&quot; x=&quot;280&quot; y=&quot;204&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;cmsis&quot; x=&quot;30&quot; y=&quot;860&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;cmsis&quot; x=&quot;31&quot; y=&quot;284&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;core&quot; x=&quot;30&quot; y=&quot;240&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;dfp&quot; x=&quot;233&quot; y=&quot;57&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;evsys&quot; x=&quot;30&quot; y=&quot;180&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;nvmctrl&quot; x=&quot;30&quot; y=&quot;100&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;pmsm_foc&quot; x=&quot;434&quot; y=&quot;153&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;8&quot; id=&quot;rtc&quot; x=&quot;280&quot; y=&quot;367&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;9&quot; id=&quot;sa_engine&quot; x=&quot;440&quot; y=&quot;375&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;9&quot; id=&quot;sa_engine&quot; x=&quot;439&quot; y=&quot;375&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;10&quot; id=&quot;sercom2&quot; x=&quot;280&quot; y=&quot;436&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;11&quot; id=&quot;tcc0&quot; x=&quot;279&quot; y=&quot;271&quot;/&gt;
       &lt;/ElementPositions&gt;
@@ -2414,7 +2414,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_60_FUNCTION_NAME"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_60_FUNCTION_NAME&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;TRANSMIT&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
 </value>
@@ -2423,7 +2425,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_60_FUNCTION_TYPE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_60_FUNCTION_TYPE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;SERCOM2_PAD0&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
 </value>
@@ -2454,7 +2458,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_61_FUNCTION_NAME"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_61_FUNCTION_NAME&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;RECEIVE&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
 </value>
@@ -2463,7 +2469,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_61_FUNCTION_TYPE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_61_FUNCTION_TYPE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;SERCOM2_PAD1&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
 </value>
@@ -4893,6 +4901,17 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="pmsm_foc" name="MCPMSMFOC_ANALOG_FRONT_END_IA_OFFSET"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
+  &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_ANALOG_FRONT_END_IA_OFFSET&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;1.65&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/pmsm_foc&gt;
+&lt;/pmsm_foc&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="pmsm_foc" name="MCPMSMFOC_ANALOG_FRONT_END_IA_SHUNT"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_ANALOG_FRONT_END_IA_SHUNT&quot;&gt;
@@ -4911,6 +4930,17 @@
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;15.0&quot;/&gt;
       &lt;User dnOrder=&quot;1&quot; value=&quot;24.95&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/pmsm_foc&gt;
+&lt;/pmsm_foc&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="pmsm_foc" name="MCPMSMFOC_ANALOG_FRONT_END_IB_OFFSET"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
+  &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_ANALOG_FRONT_END_IB_OFFSET&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;1.65&quot;/&gt;
     &lt;/Values&gt;
   &lt;/pmsm_foc&gt;
 &lt;/pmsm_foc&gt;
@@ -4957,7 +4987,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_BEMF_CONST&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;7.24&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;7.515&quot;/&gt;
     &lt;/Values&gt;
   &lt;/pmsm_foc&gt;
 &lt;/pmsm_foc&gt;
@@ -5033,6 +5063,17 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="pmsm_foc" name="MCPMSMFOC_DATA_MONITOR_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
+  &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_DATA_MONITOR_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/pmsm_foc&gt;
+&lt;/pmsm_foc&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="pmsm_foc" name="MCPMSMFOC_DC_BUS_RATIO"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_DC_BUS_RATIO&quot;&gt;
@@ -5048,7 +5089,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_ENCODER_QDEC_PULSE_PER_EREV&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;0&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;200&quot;/&gt;
     &lt;/Values&gt;
   &lt;/pmsm_foc&gt;
 &lt;/pmsm_foc&gt;
@@ -5059,7 +5100,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_ID_PID_KI&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;71.89&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;13.319&quot;/&gt;
     &lt;/Values&gt;
   &lt;/pmsm_foc&gt;
 &lt;/pmsm_foc&gt;
@@ -5070,7 +5111,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_ID_PID_KP&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;0.0065728&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;0.014954667&quot;/&gt;
     &lt;/Values&gt;
   &lt;/pmsm_foc&gt;
 &lt;/pmsm_foc&gt;
@@ -5081,7 +5122,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_IQ_PID_KI&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;71.89&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;13.319&quot;/&gt;
     &lt;/Values&gt;
   &lt;/pmsm_foc&gt;
 &lt;/pmsm_foc&gt;
@@ -5092,7 +5133,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_IQ_PID_KP&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;0.0065728&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;0.014954667&quot;/&gt;
     &lt;/Values&gt;
   &lt;/pmsm_foc&gt;
 &lt;/pmsm_foc&gt;
@@ -5103,7 +5144,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_LD&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;1.92E-4&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;3.2E-4&quot;/&gt;
     &lt;/Values&gt;
   &lt;/pmsm_foc&gt;
 &lt;/pmsm_foc&gt;
@@ -5114,7 +5155,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_LQ&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;1.92E-4&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;3.2E-4&quot;/&gt;
     &lt;/Values&gt;
   &lt;/pmsm_foc&gt;
 &lt;/pmsm_foc&gt;
@@ -5136,7 +5177,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_MAX_SPEED&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;4000.0&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;3500.0&quot;/&gt;
     &lt;/Values&gt;
   &lt;/pmsm_foc&gt;
 &lt;/pmsm_foc&gt;
@@ -5159,7 +5200,7 @@
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_MOTOR_SEL&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;Hurst DMA0204024B101&quot;/&gt;
-      &lt;User dnOrder=&quot;1&quot; value=&quot;Hurst DMB0224C10002&quot;/&gt;
+      &lt;User dnOrder=&quot;1&quot; value=&quot;Hurst DMA0204024B101&quot;/&gt;
     &lt;/Values&gt;
   &lt;/pmsm_foc&gt;
 &lt;/pmsm_foc&gt;
@@ -5204,7 +5245,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_R&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;2.1&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;0.285&quot;/&gt;
     &lt;/Values&gt;
   &lt;/pmsm_foc&gt;
 &lt;/pmsm_foc&gt;
@@ -5215,7 +5256,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;pmsm_foc&gt;
   &lt;pmsm_foc dnOrder=&quot;0&quot; id=&quot;MCPMSMFOC_RATED_SPEED&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;2054.0&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;pmsm_foc&quot; value=&quot;2804.0&quot;/&gt;
     &lt;/Values&gt;
   &lt;/pmsm_foc&gt;
 &lt;/pmsm_foc&gt;
@@ -5469,6 +5510,7 @@
   &lt;sa_engine dnOrder=&quot;0&quot; id=&quot;SA_ENGINE_TARGET_INT&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sa_engine&quot; value=&quot;SERCOM2_USART&quot;/&gt;
+      &lt;User dnOrder=&quot;1&quot; value=&quot;SERCOM2_UART&quot;/&gt;
     &lt;/Values&gt;
   &lt;/sa_engine&gt;
 &lt;/sa_engine&gt;
@@ -5827,7 +5869,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\port\plib_port.h</file>
-         <hash>16212b05c25574c2f4535aea987b1ce44cb1ab9ca88fb0a0be2dd2c3704e0e26</hash>
+         <hash>7a316a8760336147458764f38a73532f074457f00fc5e97e196bf0e50fcfdfe3</hash>
       </entry>
       <entry>
          <file>..\src\config\default\QSpin\Utilities\mc_utilities.h</file>
@@ -5895,7 +5937,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\pin_configurations.csv</file>
-         <hash>c25ad10dde151003d143ff3e0400ada3ce249a44d63d1b618b9fc4c989819093</hash>
+         <hash>b88febe1d67c1d59b895cc0be862c12efa6aece8311328596bde927f5629ad87</hash>
       </entry>
       <entry>
          <file>..\src\config\default\sa.engine\inc\splitimage.h</file>
@@ -5967,7 +6009,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\QSpin\Field_Oriented_Control\mc_rotor_position_calculation.h</file>
-         <hash>73d87432007ba495523c467d394597446b1bc4a3ce3161372b13292055c67ebd</hash>
+         <hash>e1a151f22c117b7156b796f377e5b8798cc90fec6b2f0f4bcf501c7c689b8762</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\nvic\plib_nvic.h</file>
@@ -6015,7 +6057,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\QSpin\Hardware_Abstraction\mc_hardware_abstraction.c</file>
-         <hash>8828693b0775aa640ba795378729b688f386916773060bfe1cc7dcb01787cf7b</hash>
+         <hash>1c0589ed1911f3b1bf74318b96ff3f9fc145269ca97139d5163c54327c539757</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME54P20A_DFP\instance\sercom3.h</file>
@@ -6023,7 +6065,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\QSpin\Hardware_Abstraction\mc_hardware_abstraction.h</file>
-         <hash>7cf0f5cb238ed77021904ca2c557f268c911042ff757791625b0d5ea4b55c65c</hash>
+         <hash>8efb91390bd3d7b432380b0cb57fc7f51018a03fd17d5e0991adcd1cf0251e1b</hash>
       </entry>
       <entry>
          <file>..\src\config\default\device_cache.h</file>
@@ -6039,7 +6081,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\QSpin\Field_Oriented_Control\mc_torque_control.h</file>
-         <hash>6c3768c729a7f29f7b07fe4b97c6f829bdfcbd163becfb7bdcd1922346d869bd</hash>
+         <hash>82d2d365a2fd766e7034e084e4bf620e04a6d778792afd8725c18b70d156d668</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\sercom\usart\plib_sercom_usart_common.h</file>
@@ -6155,7 +6197,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\definitions.h</file>
-         <hash>362aeac7b36482ab2f18dc2b165fc6a9e7b13000dab6ee88d3737c1bddc58f67</hash>
+         <hash>ce7a0391826d71928ba6cafc4b867cbbb4c472701c60d9cb97c7f242685c7e4a</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\cmcc\plib_cmcc.c</file>
@@ -6191,7 +6233,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\QSpin\Field_Oriented_Control\mc_reference_control.h</file>
-         <hash>6c7e1d9812bad44a3f53898debf6cc93a85a7cf592a9713fbea141898860a636</hash>
+         <hash>17e1ff410ee1f2a281e4db809d9c31283177f36b9d0f9acec00c8a690fc1f1f8</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME54P20A_DFP\instance\icm.h</file>
@@ -6235,7 +6277,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\QSpin\Field_Oriented_Control\mc_motor.h</file>
-         <hash>f1fbd1e3728e3da5e6fc0b5b90667c67015f73afbde8a8d3dc0aacc996c10703</hash>
+         <hash>2679241cada39d9a2ac70d70159ed267c2103a79ae5f0abcdab6b2150093575a</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME54P20A_DFP\instance\sdhc1.h</file>
@@ -6351,7 +6393,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\QSpin\Field_Oriented_Control\mc_flux_control.h</file>
-         <hash>bc92ab04ff46904d293fbc4777ea0526660f7e8900a390c8d5e738cb345ebf15</hash>
+         <hash>e4fb2d48f1a4168189125fc3167773251ef3b2799fb71aa55f0e7941a4771998</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME54P20A_DFP\component\ac.h</file>
@@ -6479,7 +6521,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\QSpin\mc_application.c</file>
-         <hash>3da75a565f5f584f96be023f092915fa52a2a591480bed1d2a635fbb099edf40</hash>
+         <hash>fa32a3e0410513a8b8a48032f03ff9654c839df1fafa16a5838d1dd29d211108</hash>
       </entry>
       <entry>
          <file>..\src\config\default\QSpin\mc_key_manager.c</file>

@@ -80,7 +80,7 @@ typedef struct
 __STATIC_INLINE void mcRefI_ParametersSet( tmcRef_Parameters_s * const pParameters )
 {
     pParameters->minimumRpm = (float32_t)500;
-    pParameters->maximumRpm = (float32_t)4000;
+    pParameters->maximumRpm = (float32_t)3500;
 
 }
 

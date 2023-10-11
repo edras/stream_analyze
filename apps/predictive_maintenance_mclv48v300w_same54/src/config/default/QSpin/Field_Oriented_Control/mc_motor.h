@@ -110,14 +110,14 @@ extern tmcMot_PMSM_s mcMotI_PMSM_gds;
  */
 static inline void mcMotI_ParametersSet(tmcMot_PMSM_s * const pParameters )
 {
-    pParameters->RsInOhms = (float32_t)(2.1);
-    pParameters->LdInHenry = (float32_t)(0.000192);
-    pParameters->LqInHenry = (float32_t)(0.000192);
+    pParameters->RsInOhms = (float32_t)(0.285);
+    pParameters->LdInHenry = (float32_t)(0.00032);
+    pParameters->LqInHenry = (float32_t)(0.00032);
     pParameters->PolePairs = (float32_t)(5);
-    pParameters->KeInVpeakPerKrpm = (float32_t)(7.24);
+    pParameters->KeInVpeakPerKrpm = (float32_t)(7.515);
     pParameters->IrmsMaxInAmps = (float32_t)(4);
-    pParameters->NratedInRpm = (float32_t)(2054);
-    pParameters->NmaxInRpm = (float32_t)(4000);
+    pParameters->NratedInRpm = (float32_t)(2804);
+    pParameters->NmaxInRpm = (float32_t)(3500);
     pParameters->JmInKgPerCmSquare = 0.2f;
 }
 
