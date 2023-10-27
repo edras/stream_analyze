@@ -1,18 +1,18 @@
 /*******************************************************************************
- System Interrupts File
+  Board Support Package Implementation
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    interrupt.h
+    bsp.c
 
   Summary:
-    Interrupt vectors mapping
+    Board Support Package implementation.
 
   Description:
-    This file contains declarations of device vectors used by Harmony 3
- *******************************************************************************/
+    This file contains routines that implement the board support package
+*******************************************************************************/
 
 // DOM-IGNORE-BEGIN
 /*******************************************************************************
@@ -36,42 +36,48 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
- *******************************************************************************/
+*******************************************************************************/
 // DOM-IGNORE-END
-
-#ifndef INTERRUPTS_H
-#define INTERRUPTS_H
 
 // *****************************************************************************
 // *****************************************************************************
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-#include <stdint.h>
 
-
+#include "bsp.h"
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Handler Routines
+// *****************************************************************************
+// Section: Interface Routines
 // *****************************************************************************
 // *****************************************************************************
 
-void Reset_Handler (void);
-void NonMaskableInt_Handler (void);
-void HardFault_Handler (void);
-void MemoryManagement_Handler (void);
-void BusFault_Handler (void);
-void UsageFault_Handler (void);
-void DebugMonitor_Handler (void);
-void SysTick_Handler (void);
-void RTC_InterruptHandler (void);
-void DMAC_0_InterruptHandler (void);
-void DMAC_1_InterruptHandler (void);
-void SERCOM4_USART_InterruptHandler (void);
-void TCC0_OTHER_InterruptHandler (void);
-void ADC0_RESRDY_InterruptHandler (void);
+// *****************************************************************************
+/* Function:
+    void BSP_Initialize(void)
+
+  Summary:
+    Performs the necessary actions to initialize a board
+
+  Description:
+    This function initializes the LED, Switch and other ports on the board.
+    This function must be called by the user before using any APIs present in
+    this BSP.
+
+  Remarks:
+    Refer to bsp.h for usage information.
+*/
+
+void BSP_Initialize(void )
+{
 
 
 
-#endif // INTERRUPTS_H
+
+}
+
+/*******************************************************************************
+ End of File
+*/

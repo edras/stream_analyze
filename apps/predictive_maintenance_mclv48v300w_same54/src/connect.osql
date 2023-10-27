@@ -55,9 +55,5 @@ create function send_sann_serial(Charstring name) ->Boolean
 
 
 //Change the first argument to the function serial_southbound_options to match the com-port to the motor-control board. In this case it is 10.
-//microedge_relay("edge1", southbound_config("SERIAL-COM", 5, serial_southbound_options(5, 115200)));
+microedge_relay("edge1", southbound_config("SERIAL-COM", 5, serial_southbound_options(37, 115200)));
 
-
-// Raspberry Connection
-//Change the first argument to the function serial_southbound_options to match the com-port to the motor-control board. In this case it is 10.
-microedge_relay("edge1", southbound_config("SERIAL-COM", 5, serial_southbound_options("/dev/ttyACM0", 115200)));

@@ -29,8 +29,8 @@ Pin Number,Pin ID,Custom Name,Function,Mode, Direction,Latch,Pull Up,Pull Down,D
 36,PA11,,Available,,,,,,NORMAL
 39,PB10,,Available,,,,,,NORMAL
 40,PB11,,Available,,,,,,NORMAL
-41,PB12,,Available,,,,,,NORMAL
-42,PB13,,Available,,,,,,NORMAL
+41,PB12,TRANSMIT,SERCOM4_PAD0,Digital,High Impedance,n/a,No,No,NORMAL
+42,PB13,RECEIVE,SERCOM4_PAD1,Digital,High Impedance,n/a,No,No,NORMAL
 43,PB14,,Available,,,,,,NORMAL
 44,PB15,,Available,,,,,,NORMAL
 47,PD08,BUTTON_01,GPIO,Digital,In,n/a,No,No,NORMAL

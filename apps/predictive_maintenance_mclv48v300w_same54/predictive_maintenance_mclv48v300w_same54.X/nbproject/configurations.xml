@@ -6,6 +6,9 @@
                    projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
         <logicalFolder name="default" displayName="default" projectFiles="true">
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/default/bsp/bsp.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="adc" displayName="adc" projectFiles="true">
               <itemPath>../src/config/default/peripheral/adc/plib_adc_common.h</itemPath>
@@ -39,7 +42,7 @@
             <logicalFolder name="sercom" displayName="sercom" projectFiles="true">
               <logicalFolder name="usart" displayName="usart" projectFiles="true">
                 <itemPath>../src/config/default/peripheral/sercom/usart/plib_sercom_usart_common.h</itemPath>
-                <itemPath>../src/config/default/peripheral/sercom/usart/plib_sercom2_usart.h</itemPath>
+                <itemPath>../src/config/default/peripheral/sercom/usart/plib_sercom4_usart.h</itemPath>
               </logicalFolder>
             </logicalFolder>
             <logicalFolder name="systick" displayName="systick" projectFiles="true">
@@ -91,17 +94,17 @@
           </logicalFolder>
           <logicalFolder name="sa.engine" displayName="sa.engine" projectFiles="true">
             <logicalFolder name="inc" displayName="inc" projectFiles="true">
-              <itemPath>../src/config/default/sa.engine/inc/sa_client.h</itemPath>
-              <itemPath>../src/config/default/sa.engine/inc/environ.h</itemPath>
-              <itemPath>../src/config/default/sa.engine/inc/sa_nanocore_coro.h</itemPath>
               <itemPath>../src/config/default/sa.engine/inc/sa_utilities.h</itemPath>
-              <itemPath>../src/config/default/sa.engine/inc/sa_syscalls.h</itemPath>
-              <itemPath>../src/config/default/sa.engine/inc/sa_handle.h</itemPath>
-              <itemPath>../src/config/default/sa.engine/inc/sa_lisp.h</itemPath>
-              <itemPath>../src/config/default/sa.engine/inc/sa_types.h</itemPath>
               <itemPath>../src/config/default/sa.engine/inc/sa_storage.h</itemPath>
+              <itemPath>../src/config/default/sa.engine/inc/sa_lisp.h</itemPath>
+              <itemPath>../src/config/default/sa.engine/inc/sa_client.h</itemPath>
+              <itemPath>../src/config/default/sa.engine/inc/sa_nanocore_coro.h</itemPath>
               <itemPath>../src/config/default/sa.engine/inc/sa_threads.h</itemPath>
+              <itemPath>../src/config/default/sa.engine/inc/environ.h</itemPath>
               <itemPath>../src/config/default/sa.engine/inc/splitimage.h</itemPath>
+              <itemPath>../src/config/default/sa.engine/inc/sa_types.h</itemPath>
+              <itemPath>../src/config/default/sa.engine/inc/sa_handle.h</itemPath>
+              <itemPath>../src/config/default/sa.engine/inc/sa_syscalls.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <itemPath>../src/config/default/interrupts.h</itemPath>
@@ -259,6 +262,9 @@
                    projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
         <logicalFolder name="default" displayName="default" projectFiles="true">
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/default/bsp/bsp.c</itemPath>
+          </logicalFolder>
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="adc" displayName="adc" projectFiles="true">
               <itemPath>../src/config/default/peripheral/adc/plib_adc0.c</itemPath>
@@ -290,7 +296,7 @@
             </logicalFolder>
             <logicalFolder name="sercom" displayName="sercom" projectFiles="true">
               <logicalFolder name="usart" displayName="usart" projectFiles="true">
-                <itemPath>../src/config/default/peripheral/sercom/usart/plib_sercom2_usart.c</itemPath>
+                <itemPath>../src/config/default/peripheral/sercom/usart/plib_sercom4_usart.c</itemPath>
               </logicalFolder>
             </logicalFolder>
             <logicalFolder name="systick" displayName="systick" projectFiles="true">
@@ -393,7 +399,7 @@
         </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
-          <parseOnProdLoad>true</parseOnProdLoad>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
         <subordinates>
@@ -627,14 +633,13 @@
         <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.interface.jtag" value="2wire"/>
-        <property key="communication.speed" value="2,000"/>
+        <property key="communication.speed" value="2.000"/>
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="event.recorder.enabled" value="false"/>
         <property key="event.recorder.scvd.files" value=""/>
-        <property key="freeze.timers" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="lastid" value=""/>
         <property key="memories.aux" value="false"/>
@@ -653,8 +658,6 @@
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programmerToGoFilePath"
                   value="D:/stream_analyze/apps/predictive_maintenance_sam_e54/predictive_maintenance_sam_e54.X/debug/default/predictive_maintenance_sam_e54_ptg"/>
-        <property key="programmerToGoImageName"
-                  value="predictive_maintenance_mclv48v300w_same54_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>
@@ -676,8 +679,6 @@
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
-        <property key="ptgProgramImage" value="true"/>
-        <property key="ptgSendImage" value="true"/>
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
         <property key="toolpack.updateoptions.packversion"
@@ -685,80 +686,6 @@
         <property key="voltagevalue" value="3.25"/>
         <property key="x.erase.clearprot" value="true"/>
       </Tool>
-      <pk4hybrid>
-        <property key="AutoSelectMemRanges" value="auto"/>
-        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
-        <property key="ToolFirmwareFilePath"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UpdateOptions"
-                  value="ToolFirmwareOption.UseLatest"/>
-        <property key="ToolFirmwareToolPack"
-                  value="Press to select which tool pack to use"/>
-        <property key="communication.activationmode" value="nohv"/>
-        <property key="communication.interface" value="swd"/>
-        <property key="communication.interface.jtag" value="2wire"/>
-        <property key="communication.speed" value="2,000"/>
-        <property key="debugoptions.debug-startup" value="Use system settings"/>
-        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
-        <property key="debugoptions.simultaneous.debug" value="false"/>
-        <property key="debugoptions.useswbreakpoints" value="false"/>
-        <property key="event.recorder.enabled" value="false"/>
-        <property key="event.recorder.scvd.files" value=""/>
-        <property key="freeze.timers" value="false"/>
-        <property key="lastid" value=""/>
-        <property key="memories.aux" value="false"/>
-        <property key="memories.bootflash" value="true"/>
-        <property key="memories.configurationmemory" value="true"/>
-        <property key="memories.configurationmemory2" value="true"/>
-        <property key="memories.dataflash" value="true"/>
-        <property key="memories.eeprom" value="true"/>
-        <property key="memories.exclude.configurationmemory" value="true"/>
-        <property key="memories.flashdata" value="true"/>
-        <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram.ranges"
-                  value="${memories.instruction.ram.ranges}"/>
-        <property key="memories.programmemory" value="true"/>
-        <property key="memories.programmemory.ranges" value="0-fffff"/>
-        <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="D:/stream_analyze/apps/predictive_maintenance_sam_e54/predictive_maintenance_sam_e54.X/debug/default/predictive_maintenance_sam_e54_ptg"/>
-        <property key="programmerToGoImageName"
-                  value="predictive_maintenance_mclv48v300w_same54_ptg"/>
-        <property key="programoptions.donoteraseauxmem" value="false"/>
-        <property key="programoptions.eraseb4program" value="true"/>
-        <property key="programoptions.ledbrightness" value="5"/>
-        <property key="programoptions.pgcconfig" value="pull down"/>
-        <property key="programoptions.pgcresistor.value" value="4.7"/>
-        <property key="programoptions.pgdconfig" value="pull down"/>
-        <property key="programoptions.pgdresistor.value" value="4.7"/>
-        <property key="programoptions.pgmentry.voltage" value="low"/>
-        <property key="programoptions.pgmspeed" value="Med"/>
-        <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges"
-                  value="${memories.dataflash.default}"/>
-        <property key="programoptions.preserveeeprom" value="false"/>
-        <property key="programoptions.preserveeeprom.ranges" value=""/>
-        <property key="programoptions.preserveprogram.ranges" value=""/>
-        <property key="programoptions.preserveprogramrange" value="false"/>
-        <property key="programoptions.preserveuserid" value="false"/>
-        <property key="programoptions.program.otpconfig" value="false"/>
-        <property key="programoptions.programcalmem" value="false"/>
-        <property key="programoptions.programuserotp" value="false"/>
-        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
-        <property key="ptgProgramImage" value="true"/>
-        <property key="ptgSendImage" value="true"/>
-        <property key="toolpack.updateoptions"
-                  value="toolpack.updateoptions.uselatestoolpack"/>
-        <property key="toolpack.updateoptions.packversion"
-                  value="Press to select which tool pack to use"/>
-        <property key="voltagevalue" value="3.25"/>
-        <property key="x.erase.clearprot" value="true"/>
-      </pk4hybrid>
-      <pkob4hybrid>
-        <property key="memories.programmemory.ranges" value="0-fffff"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/Users/M71906/MPLABXProjects/sa_edras/apps/predictive_maintenance_mclv48v300w_same54/predictive_maintenance_mclv48v300w_same54.X/debug/default/predictive_maintenance_mclv48v300w_same54_ptg"/>
-      </pkob4hybrid>
     </conf>
   </confs>
 </configurationDescriptor>

@@ -85,7 +85,7 @@ int main ( void )
         SYS_Tasks ( );
         
         /** Check for UART error */
-        if ( USART_ERROR_NONE != SERCOM2_USART_ErrorGet() ) 
+        if ( USART_ERROR_NONE != SERCOM4_USART_ErrorGet() ) 
         {
             LED_02_Set();
         }

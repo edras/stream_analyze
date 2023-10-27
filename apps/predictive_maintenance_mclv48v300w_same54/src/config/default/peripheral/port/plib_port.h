@@ -77,6 +77,14 @@
 #define VDC_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 8U)) & 0x01U)
 #define VDC_PIN                  PORT_PIN_PA08
 
+/*** Macros for TRANSMIT pin ***/
+#define TRANSMIT_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 12U)) & 0x01U)
+#define TRANSMIT_PIN                  PORT_PIN_PB12
+
+/*** Macros for RECEIVE pin ***/
+#define RECEIVE_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 13U)) & 0x01U)
+#define RECEIVE_PIN                  PORT_PIN_PB13
+
 /*** Macros for BUTTON_01 pin ***/
 #define BUTTON_01_Set()               (PORT_REGS->GROUP[3].PORT_OUTSET = ((uint32_t)1U << 8U))
 #define BUTTON_01_Clear()             (PORT_REGS->GROUP[3].PORT_OUTCLR = ((uint32_t)1U << 8U))

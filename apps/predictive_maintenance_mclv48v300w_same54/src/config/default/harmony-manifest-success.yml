@@ -4,12 +4,12 @@
 
 
 project: apps
-creation_date: 2023-10-11T12:28:54.411+02:00[Europe/Berlin]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2023-10-27T14:09:41.708+02:00[Europe/Berlin]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mcc_mode: IDE            # [IDE|Standalone|Headless]
 mcc_version: v5.3.7
 mcc_core_version: v5.5.7
-mplabx_version: v6.10        # if MPLAB X plugin only
+mplabx_version: v6.15        # if MPLAB X plugin only
 harmony_version: v1.3.2
 compiler: XC32 (v4.21) 
 
@@ -18,4 +18,5 @@ modules:
     - {name: "dev_packs", version: "v3.18.0"}
     - {name: "stream_analyze", version: "v1.0.0"}
     - {name: "motor_control", version: "v3.10.0"}
+    - {name: "bsp", version: "v3.17.0"}
 

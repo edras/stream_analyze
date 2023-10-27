@@ -7,7 +7,7 @@
  *
  ****************************************************************************/
 
-/* Start the Name Server - riquired when using with VSC */
+/* Start the Name Server - required when using with VSC */
 start_nameserver("ns");
 
 /*Simple 1+1, the hello world of edge computing */

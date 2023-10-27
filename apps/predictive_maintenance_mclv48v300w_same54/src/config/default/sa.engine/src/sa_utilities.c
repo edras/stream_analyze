@@ -111,19 +111,19 @@ void SAEngine_Initialize( void )
     #pragma coverity compliance block deviate:2 "MISRA C-2012 Rule 11.6" "H3_MISRAC_2012_R_11_6_DR_1"
 
     /** Register a callback for read events */
-    SERCOM2_USART_ReadCallbackRegister(SAEngine_UartReadEventHandler, (uintptr_t) NULL);
+    SERCOM4_USART_ReadCallbackRegister(SAEngine_UartReadEventHandler, (uintptr_t) NULL);
 
     #pragma coverity compliance end_block "MISRA C-2012 Rule 11.6"
     #pragma GCC diagnostic pop
     /* MISRAC 2012 deviation block end */
 
     /** Set USART read threshold */
-    SERCOM2_USART_ReadThresholdSet(1);
+    SERCOM4_USART_ReadThresholdSet(1);
 
     /* Enable RX event notifications */
     bool status;
 
-    status = SERCOM2_USART_ReadNotificationEnable(true, false);
+    status = SERCOM4_USART_ReadNotificationEnable(true, false);
 
     if(true == status )
     {
@@ -254,7 +254,7 @@ size_t SAEngine_SerialBufferWrite(int16_t index, uint8_t * const buffer, size_t 
             #pragma GCC diagnostic ignored "-Wunknown-pragmas"
             #pragma coverity compliance block deviate:2 "MISRA C-2012 Rule 11.8" "H3_MISRAC_2012_R_11_8_DR_1"
 
-            flag = DMAC_ChannelTransfer(DMAC_CHANNEL_0, buffer, (const void *)&(SERCOM2_REGS->USART_INT.SERCOM_DATA), len );
+            flag = DMAC_ChannelTransfer(DMAC_CHANNEL_0, buffer, (const void *)&(SERCOM4_REGS->USART_INT.SERCOM_DATA), len );
 
             #pragma coverity compliance end_block "MISRA C-2012 Rule 11.8"
             #pragma GCC diagnostic pop
@@ -280,7 +280,7 @@ void SAEngine_UartReadEventHandler(SERCOM_USART_EVENT event, uintptr_t context )
     if (event == SERCOM_USART_EVENT_READ_THRESHOLD_REACHED)
     {
         /** Receiver should atleast have the threshold number of bytes in the ring buffer */
-        size_t nBytesAvailable = SERCOM2_USART_ReadCountGet();
+        size_t nBytesAvailable = SERCOM4_USART_ReadCountGet();
 
         /* MISRA C-2012 17.7 deviated below. Deviation record ID - H3_MISRAC_2012_R_17_7_DR_1 */
         #pragma GCC diagnostic push
@@ -288,7 +288,7 @@ void SAEngine_UartReadEventHandler(SERCOM_USART_EVENT event, uintptr_t context )
         #pragma coverity compliance block deviate:2 "MISRA C-2012 Rule 17.7" "H3_MISRAC_2012_R_17_7_DR_1"
         /** Read USART ring buffer into rxBuffer */
 
-        SERCOM2_USART_Read((uint8_t*)&rxBuffer[0], nBytesAvailable);
+        SERCOM4_USART_Read((uint8_t*)&rxBuffer[0], nBytesAvailable);
 
         #pragma coverity compliance end_block "MISRA C-2012 Rule 17.7"
         #pragma GCC diagnostic pop

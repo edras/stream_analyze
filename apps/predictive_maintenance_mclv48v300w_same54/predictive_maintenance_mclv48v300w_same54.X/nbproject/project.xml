@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>predictive_maintenance_mclv48v300w_same54</name>
+            <name>predictive_maintenance_mclv48V300W_same54</name>
             <creation-uuid>85920e6a-ae58-4d5a-acf5-87d49012136e</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
