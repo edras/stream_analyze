@@ -11,6 +11,7 @@
 dist/
 debug/
 build/
+queuelogs/
 **/*.X/debug
 **/*.X/dist
 **/*.X/build
