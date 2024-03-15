@@ -62,6 +62,30 @@ edge_cq("edge1","select [((dev_speed)*(dev_Iq)*500),status]
    and maxi_speed=max(t[2])
    and mean_speed=mean(t[2])
    and dev_speed=stdev(t[2])
-   and status = case when ((dev_speed)*(dev_Iq)*500) > 9 then 10
-              else 0 end");             
+   and status = case when ((dev_speed)*(dev_Iq)*500) > 150 then 200
+              else 0 end");      
+
+// configuring MQTT publish service
+// 1. configure mqtt options
+set :mqtt_connect_opts = {
+    "qos": 0,
+    "connection": "tcp://localhost:1883",
+    "clientid": "client" + sha256(ntoa(rand(10e16)))
+};
+ 
+// 2. register the client
+mqtt:register_client("mqtt",:mqtt_connect_opts);
+
+// 3. this is the same query as above, but we publish it instead of plotting
+publish(
+edge_cq("edge1","select [mean_speed, status]
+  from Matrix m, Matrix t, real dev_Iq, real dev_speed, real mean_speed, integer result, integer status
+where m in winagg(sensor:stream([0,1]), 400, 200)
+   and t = transpose(m)
+   and mean_speed=mean(t[2])
+   and dev_Iq=stdev(t[1])
+   and dev_speed=stdev(t[2])
+   and result=dev_speed*dev_Iq*50
+   and status = case when result > 11 and result < 40 then 10 else 0 end"), 
+"mqtt:sa_engine/status");       
               
